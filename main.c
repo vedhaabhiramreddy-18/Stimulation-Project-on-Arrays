@@ -1,13 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
-// Structure
 struct song {
     char name[50];
     char artist[50];
 };
 
-// Clear input buffer
 void clearBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
@@ -178,7 +176,7 @@ int main() {
 
         printf("Enter choice: ");
         scanf("%d", &ch);
-        clearBuffer();   // IMPORTANT to avoid skipping
+        clearBuffer();   
 
         switch (ch) {
             case 1: addSong(); break;
@@ -191,4 +189,3 @@ int main() {
         }
     }
 }
-1
